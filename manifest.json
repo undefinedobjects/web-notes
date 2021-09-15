@@ -1,0 +1,24 @@
+{
+  "name": "Web Notes",
+  "description": "",
+  "version": "0.0.0.2",
+  "author": "undefined objects",
+  "manifest_version": 2,
+  "browser_action":{
+    "default_icon": "icon.png",
+  	"default_popup": "index.html",
+  	"default_title": "Web Notes",
+    "content_scripts": [
+    {
+        "css": ["css/index.css"],
+        "js": ["js/index.js"]
+    }]
+  },
+  "permissions": [
+    "tabs"
+  ],
+  "icons": {
+    "128": "icon.png",
+    "256": "icon-256.png"
+  }
+}
